@@ -1,0 +1,4 @@
+Ekspedient 2100 157
+Policjant 1940 297
+Nauczyciel 2752 114
+Inzynier 5056 325
