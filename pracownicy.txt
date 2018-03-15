@@ -1,0 +1,5 @@
+Anna Nowak 32 Ekspedient 5
+Jan Kowalski 23 Nauczyciel 3
+Mariusz Prawidlowy 48 Policjant 17
+Andrzej Motorowicz 44 Inzynier 23
+Sebastian Niechciany 88 Bezrobotny 88

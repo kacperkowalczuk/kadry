@@ -1,25 +1,40 @@
 import java.util.Scanner;
 
 public class Pracownik {
+
+    private int id;
     private String imie;
     private String nazwisko;
     private int wiek;
     private String stanowisko;
     private int lataDoswiadczenia;
-    private int placa;
+    private double placa;
     private int premia;
 
     public Pracownik()
     {
 
     }
-    public Pracownik(String imie, String nazwisko, int wiek, String stanowisko, int lataDoswiadczenia)
+    public Pracownik(int id,String imie, String nazwisko, int wiek, String stanowisko, int lataDoswiadczenia, double placa, int premia)
     {
+        this.id = id;
         this.imie = imie;
         this.nazwisko = nazwisko;
         this.wiek = wiek;
         this.stanowisko = stanowisko;
         this.lataDoswiadczenia = lataDoswiadczenia;
+        this.placa = placa;
+        this.premia = premia;
+    }
+
+    public void setId(int id)
+    {
+        this.id = id;
+    }
+
+    public int getId()
+    {
+        return id;
     }
 
     public void setImie(String imie)
@@ -63,7 +78,7 @@ public class Pracownik {
         this.lataDoswiadczenia = lataDoswiadczenia;
 
     }
-    public int getPlaca() {
+    public double getPlaca() {
         return placa;
     }
 
@@ -78,4 +93,6 @@ public class Pracownik {
     public void setPremia(int premia) {
         this.premia = premia;
     }
+
+    //TODO dodac hashcode, equals
 }
