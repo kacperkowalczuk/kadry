@@ -1,15 +1,14 @@
 public class Main {
     public static void main(String[] args) throws java.io.FileNotFoundException{
         
-        ControllerPracownik controllerPracownik  = new ControllerPracownik();
-        controllerPracownik.dodajPracownika(1,"Anna","Nowak",23,"Ekspedient", 5, 2100, 31);
-        controllerPracownik.dodajPracownika(2, "Michal", "Kanarg", 32, "Mechanik", 14, 5450, 212);
-        controllerPracownik.edytujPracownika(2);
-        controllerPracownik.wypiszPracownika(2);
-        controllerPracownik.edytujPracownika(1);
-        controllerPracownik.wypiszPracownika(1);
-        controllerPracownik.usunPracownika(2);
-        System.out.println("Usunieto");
-        controllerPracownik.wypiszPracownika(2);
+        WorkerController workerController = new WorkerController();
+        workerController.addWorker(1,"Anna","Nowak",23,"Clerk", 5, 2100, 31);
+        workerController.addWorker(2, "Michal", "Kanarg", 32, "Mechanic", 14, 5450, 212);
+        workerController.editWorker(2);
+        workerController.returnWorker(2);
+        workerController.editWorker(1);
+        workerController.returnWorker(1);
+        workerController.deleteWorker(2);
+        workerController.returnWorker(2);
     }
 }
